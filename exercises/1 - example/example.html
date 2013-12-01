@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!-- 
+
+1. Notice that the p tag has an id of "demo"?
+
+2. Add the following script to the head to change the <p> contents to the time.  
+
+<script type="text/javascript">
+
+function displayDate() {
+	
+	document.getElementId("demo").innerHTML=Date();
+}
+
+</script>
+
+-->
+
+<html>
+<head>
+<title>Tell My Time</title>
+
+
+<style type="text/css">
+
+body{
+	font-family: sans-serif;
+	background: url('img/regularjane glitter bokeh1_3.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#container{
+	margin: auto;
+	max-width: 800px;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px;
+	border-radius: 5px;
+}
+
+#container > button{
+	color: black;
+	border: none;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+</style>
+
+
+<script>
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+</script>
+
+</head>
+<body>
+
+		<div id="container">
+
+			<h1>My First JavaScript To Tell My Time</h1>
+			<p id="demo">This is a website to help you tell the local time and date.</p>
+
+			<button type="button" onclick="displayDate()">Display Date</button>
+
+		</div>
+</body>
+</html> 

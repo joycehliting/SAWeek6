@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tell My Time</title>
+
+<style type="text/css">
+
+body{
+	font-family: sans-serif;
+	background: url('img/regularjane glitter bokeh1_3.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#container{
+	margin: auto;
+	max-width: 800px;
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px;
+	border-radius: 5px;
+}
+
+#container > button{
+	color: black;
+	border: none;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+</style>
+
+
+<script>
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+</script>
+</head>
+<body>
+
+		<div id="container">
+
+			<h1>My First JavaScript</h1>
+
+<p>
+JavaScript can react to events. Like the click of a button:
+</p>
+
+<button type="button" onclick="alert('Welcome!')">Click Me!</button>
+
+		</div>
+</body>
+</html> 

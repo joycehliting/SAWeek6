@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--Write a script to greet people at the right time of the day
+
+<script>
+function myFunction()
+{
+var x="";
+var time=new Date().getHours();
+if (time<20)
+  {
+  x="Good day";
+  }
+else
+  {
+  x="Good evening";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+-->
+
+<html>
+<body>
+
+<p>Click the button to get a time-based greeting.</p>
+
+<button onclick="myFunction()">Greet Me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x="";
+var time=new Date().getHours();
+if (time<20)
+  {
+  x="Good day";
+  }
+else
+  {
+  x="Good evening";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</script>
+
+</body>
+</html>
